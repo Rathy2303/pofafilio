@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="wrap-navbar">
+            <div class="nav-bar" id="nav_bar">
+                <ul>
+                    <li class="myname">Torn Rathy</li>
+                </ul>
+               
+                <ul class="menu" id="menu">
+                    <li>
+                        <a href="" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Skill</a>
+                    </li>
+                    <li>
+                        <a href="">Work</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+
+                <ul id="icon-menu">
+                    <li id="menu_icon"><i onclick="menutoggle()" class="fa-solid fa-bars"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                <h1>Hi,</h1>
+                <h1>I'am <span>Rathy</span>,</h1>
+                <h1>Web Designer</h1>
+                <button><a href="https://t.me/tornrathy" target="_blank">Contact</a></button>
+            </div>
+            <div class="profile">
+                <img src="images/myphoto.png" alt="">
+            </div>
+        </div>
+        <div class="social-link">
+            <a href="https://www.facebook.com/tornrathy23/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://t.me/tornrathy" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://github.com/Rathy2303" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <script>
+            window.onresize = function(){window.location.reload()};
+            let menu = document.getElementById('menu');
+            //menu.style.height = "0px";
+            function menutoggle(){
+                if(menu.style.height == "0px")
+                    menu.style.height = "200px";
+                else{
+                    menu.style.height = "0px";
+                }
+            }
+           
+        </script>
+</body>
+</html>
